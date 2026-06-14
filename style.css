@@ -601,3 +601,204 @@ footer p {
     transform: translateY(0);
 
 }
+/* ======================
+   ARTICLE PAGE
+====================== */
+
+.article-container {
+
+    width: min(900px,90%);
+    margin:auto;
+
+}
+
+.article-hero {
+
+    padding:80px 0 40px;
+
+}
+
+.article-category {
+
+    color:var(--accent);
+
+    font-weight:700;
+
+}
+
+.article-hero h1 {
+
+    font-family:"Space Grotesk";
+
+    font-size:clamp(2.5rem,6vw,4.5rem);
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+.article-meta {
+
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+
+    color:var(--muted);
+
+}
+
+.article-banner {
+
+    width:min(1200px,90%);
+    margin:auto;
+
+}
+
+.article-banner img {
+
+    border-radius:24px;
+    max-height:600px;
+    object-fit:cover;
+
+}
+
+.article-layout {
+
+    width:min(1200px,90%);
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:
+        250px 1fr;
+
+    gap:60px;
+
+}
+
+.toc {
+
+    position:sticky;
+    top:100px;
+
+    height:max-content;
+
+}
+
+.toc h3 {
+
+    margin-bottom:20px;
+
+}
+
+.toc ul {
+
+    list-style:none;
+
+}
+
+.toc li {
+
+    margin-bottom:12px;
+
+}
+
+.toc a {
+
+    color:var(--muted);
+
+}
+
+.article-content {
+
+    max-width:800px;
+
+}
+
+.article-content h2 {
+
+    font-family:"Space Grotesk";
+
+    margin-top:50px;
+    margin-bottom:20px;
+
+}
+
+.article-content p {
+
+    line-height:2;
+    margin-bottom:20px;
+
+    color:var(--text);
+
+}
+
+.article-content blockquote {
+
+    margin:40px 0;
+
+    padding:24px;
+
+    border-left:4px solid var(--accent);
+
+    background:var(--card);
+
+    border-radius:16px;
+
+}
+
+.share-section {
+
+    width:min(900px,90%);
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.share-buttons {
+
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:20px;
+
+}
+
+.share-buttons button {
+
+    padding:14px 20px;
+
+    border-radius:999px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+}
+
+.related {
+
+    width:min(1200px,90%);
+    margin:100px auto;
+
+}
+
+@media(max-width:900px){
+
+    .article-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .toc{
+
+        display:none;
+
+    }
+
+}
