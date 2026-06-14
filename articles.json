@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "slug": "oneplus-pad-3-review",
+    "title": "OnePlus Pad 3 Review: The Best Android Tablet For Students?",
+    "category": "Reviews",
+    "description": "After weeks of testing, here's everything you need to know about the OnePlus Pad 3.",
+    "image": "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?w=1200",
+    "author": "BoredTech",
+    "date": "2026-06-15",
+    "readTime": "8 min read",
+    "featured": true
+  },
+
+  {
+    "id": 2,
+    "slug": "best-laptops-under-70000",
+    "title": "Best Laptops Under ₹70,000 For Students",
+    "category": "Buying Guides",
+    "description": "Our top laptop recommendations for students looking for performance and value.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
+    "author": "BoredTech",
+    "date": "2026-06-12",
+    "readTime": "10 min read",
+    "featured": false
+  },
+
+  {
+    "id": 3,
+    "slug": "best-ai-tools-for-students",
+    "title": "The Best AI Tools For Students In 2026",
+    "category": "AI",
+    "description": "The AI tools every student should know about this year.",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200",
+    "author": "BoredTech",
+    "date": "2026-06-10",
+    "readTime": "7 min read",
+    "featured": false
+  },
+
+  {
+    "id": 4,
+    "slug": "ipad-a16-vs-oneplus-pad-3",
+    "title": "iPad A16 vs OnePlus Pad 3: Which Should Students Buy?",
+    "category": "Comparisons",
+    "description": "A detailed comparison between Apple's budget iPad and OnePlus' newest tablet.",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200",
+    "author": "BoredTech",
+    "date": "2026-06-08",
+    "readTime": "9 min read",
+    "featured": false
+  }
+]
