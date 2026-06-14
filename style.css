@@ -886,3 +886,18 @@ footer p {
     color:var(--muted);
 
 }
+.card-meta {
+
+    margin-top:16px;
+
+    color:var(--muted);
+
+    font-size:.9rem;
+
+}
+
+.article-card {
+
+    cursor:pointer;
+
+}
