@@ -901,3 +901,126 @@ footer p {
     cursor:pointer;
 
 }
+/* ======================
+   SEARCH MODAL
+====================== */
+
+#search-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+    rgba(0,0,0,.5);
+
+    display: none;
+
+    align-items: start;
+    justify-content: center;
+
+    padding-top: 120px;
+
+    z-index: 9999;
+
+}
+
+#search-modal.active {
+
+    display: flex;
+
+}
+
+.search-box {
+
+    width: min(700px,90%);
+
+    background: var(--card);
+
+    border-radius: 24px;
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+}
+
+.search-header {
+
+    display:flex;
+
+}
+
+.search-header input {
+
+    flex:1;
+
+    padding:20px;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:var(--text);
+
+}
+
+#close-search {
+
+    width:60px;
+
+    background:transparent;
+
+    color:var(--text);
+
+}
+
+#search-results {
+
+    max-height:500px;
+
+    overflow-y:auto;
+
+}
+
+.search-result {
+
+    padding:20px;
+
+    border-top:1px solid
+    var(--border);
+
+    cursor:pointer;
+
+}
+
+.search-result:hover {
+
+    background:
+    rgba(100,100,100,.08);
+
+}
+
+.search-result h4 {
+
+    margin-bottom:8px;
+
+}
+
+.search-result p {
+
+    color:var(--muted);
+
+}
+
+.no-results {
+
+    padding:20px;
+
+    text-align:center;
+
+    color:var(--muted);
+
+}
