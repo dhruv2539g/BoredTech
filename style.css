@@ -1,1 +1,565 @@
-body{font-family:Arial,sans-serif;max-width:1100px;margin:auto;padding:20px;background:#f8fafc;color:#0f172a}.logo{width:50px;height:50px;background:#3b82f6;color:#fff;display:flex;align-items:center;justify-content:center;border-radius:12px}.card{background:#fff;padding:20px;border-radius:16px;box-shadow:0 4px 10px rgba(0,0,0,.08)}.dark{background:#0f172a;color:#f8fafc}.dark .card{background:#1e293b;color:#f8fafc}
+/* =========================
+   BOREDTECH V1
+   Tech for the Curious
+========================= */
+
+:root {
+
+    --bg: #f8fafc;
+    --card: #ffffff;
+
+    --text: #0f172a;
+    --muted: #64748b;
+
+    --accent: #2563eb;
+
+    --border: #e2e8f0;
+
+    --shadow:
+        0 10px 30px rgba(15, 23, 42, 0.06);
+
+    --radius: 24px;
+
+}
+
+/* DARK MODE */
+
+.dark {
+
+    --bg: #0f172a;
+    --card: #1e293b;
+
+    --text: #f8fafc;
+    --muted: #94a3b8;
+
+    --accent: #60a5fa;
+
+    --border: #334155;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: "Inter", sans-serif;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+img {
+
+    width: 100%;
+    display: block;
+
+}
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+button {
+
+    cursor: pointer;
+    border: none;
+
+    font-family: inherit;
+
+}
+
+.container {
+
+    width: min(1200px, 90%);
+    margin: auto;
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    width: min(1200px, 90%);
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 24px 0;
+
+}
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+
+}
+
+.logo-box {
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 16px;
+
+    background: var(--accent);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+
+}
+
+nav {
+
+    display: flex;
+    gap: 28px;
+
+}
+
+nav a {
+
+    color: var(--muted);
+    transition: .2s;
+
+}
+
+nav a:hover {
+
+    color: var(--text);
+
+}
+
+.nav-actions {
+
+    display: flex;
+    gap: 12px;
+
+}
+
+.search-btn,
+#theme-toggle {
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    width: min(900px, 90%);
+    margin: 80px auto;
+
+    text-align: center;
+
+}
+
+.hero-tag {
+
+    letter-spacing: 2px;
+
+    color: var(--accent);
+
+    font-size: .85rem;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+
+}
+
+.hero h1 {
+
+    font-family: "Space Grotesk", sans-serif;
+
+    font-size: clamp(3rem, 7vw, 5rem);
+
+    line-height: 1.05;
+
+    margin-bottom: 24px;
+
+}
+
+.hero-subtitle {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: var(--muted);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+}
+
+.hero-btn {
+
+    margin-top: 36px;
+
+    background: var(--accent);
+
+    color: white;
+
+    padding: 16px 28px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+
+    transition: .2s;
+
+}
+
+.hero-btn:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* =========================
+   FEATURED ARTICLE
+========================= */
+
+.featured {
+
+    width: min(1200px, 90%);
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+
+}
+
+.featured-image img {
+
+    border-radius: var(--radius);
+
+}
+
+.featured-content .category {
+
+    color: var(--accent);
+
+    font-size: .9rem;
+
+    font-weight: 700;
+
+}
+
+.featured-content h2 {
+
+    margin: 18px 0;
+
+    font-family: "Space Grotesk";
+
+    font-size: 2.2rem;
+
+    line-height: 1.2;
+
+}
+
+.featured-content p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+}
+
+.meta {
+
+    margin-top: 24px;
+
+    color: var(--muted);
+
+    font-size: .95rem;
+
+}
+
+/* =========================
+   LATEST ARTICLES
+========================= */
+
+.latest {
+
+    width: min(1200px, 90%);
+    margin: 120px auto;
+
+}
+
+.section-header {
+
+    margin-bottom: 40px;
+
+}
+
+.section-header h2 {
+
+    font-family: "Space Grotesk";
+
+    font-size: 2rem;
+
+}
+
+.article-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(320px,1fr));
+
+    gap: 28px;
+
+}
+
+.article-card {
+
+    background: var(--card);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    transition: .25s;
+
+}
+
+.article-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+
+}
+
+.article-card img {
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.card-content {
+
+    padding: 24px;
+
+}
+
+.card-content span {
+
+    color: var(--accent);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+
+}
+
+.card-content h3 {
+
+    margin: 12px 0;
+
+    line-height: 1.4;
+
+}
+
+.card-content p {
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+
+    width: min(900px, 90%);
+    margin: 120px auto;
+
+    text-align: center;
+
+    padding: 60px;
+
+    background: var(--card);
+
+    border-radius: var(--radius);
+
+    border: 1px solid var(--border);
+
+}
+
+.newsletter h2 {
+
+    font-family: "Space Grotesk";
+
+    font-size: 2rem;
+
+}
+
+.newsletter p {
+
+    color: var(--muted);
+
+    margin: 20px 0 30px;
+
+}
+
+.newsletter-form {
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+.newsletter-form input {
+
+    width: 320px;
+
+    padding: 16px;
+
+    border-radius: 999px;
+
+    border: 1px solid var(--border);
+
+    background: var(--bg);
+
+    color: var(--text);
+
+}
+
+.newsletter-form button {
+
+    padding: 16px 24px;
+
+    border-radius: 999px;
+
+    background: var(--accent);
+
+    color: white;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+footer h3 {
+
+    font-family: "Space Grotesk";
+
+    margin-bottom: 12px;
+
+}
+
+footer p {
+
+    color: var(--muted);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    nav {
+        display:none;
+    }
+
+    .featured {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .newsletter-form {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .newsletter-form input {
+
+        width: 100%;
+
+    }
+
+}
