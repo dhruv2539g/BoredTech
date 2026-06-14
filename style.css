@@ -563,3 +563,41 @@ footer p {
     }
 
 }
+/* Progress Bar */
+
+#progress-bar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    height: 4px;
+
+    width: 0;
+
+    background: var(--accent);
+
+    z-index: 9999;
+
+}
+
+/* Fade Animation */
+
+.featured {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: all .7s ease;
+
+}
+
+.featured.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
